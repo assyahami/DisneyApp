@@ -1,25 +1,19 @@
-import logo from './logo.svg';
+import React,{useState,useContext,createContext} from "react"
+import Homepage from "./components/home"
+import Rounter from './Rounter/Rounter';
+import Cookies from "universal-cookie"
 import './App.css';
-
+import { useParams,useNavigate } from 'react-router';
+const cookies = new Cookies();
+let token=cookies.get("token")
 function App() {
+  const [Logged, setLogged] = useState({login:false})
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Rounter />
     </div>
   );
 }
-
 export default App;

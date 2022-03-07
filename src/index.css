@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo');
+.Authication {
+  background-image: url('./images/Authication.jpg');
+  height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  background-blend-mode: multiply;
+}
+.Detail {
+  height: 100vh;
+  display: flex;
+  color: #fff;
+  justify-content: end;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat !important;
+  background-position: center;
+  background-size: 100% 100%;
+  padding-left: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+.Authication img {
+  width: 520px;
+}
+.Authication .logos {
+  width: 650px;
+}
+.Authication span {
+  line-height: 1.5;
+    font-family: "Courier New", Courier, monospace;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+.cursor {
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.sportsicon {
+  background-color: #ffff;
+  border-radius: 100%;
+  width: 10rem;
+  height: 10rem;
+  box-shadow: 6px -22px 156px -14px lightgreen;
+}
+/* .sportsicon  */
+.sportsicon:hover {
+  background-color: #222;
+  cursor: pointer;
+  background-blend-mode: multiply;
+  transition: 0.3s all ease-in-out;
+}
+.header {
+  font-family: 'Swanky and Moo Moo', cursive;
+  color: rgb(0, 255, 255);
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+.moviehead {
+  font-family: 'Rock Salt', cursive;
+}
+.css-1gh6k7f-MuiBottomNavigationAction-label {
+    font-family: "Oxygen Mono", monospace;
+}
+.footer span{
+    font-family: "Courier New", Courier, monospace;
+}
+.navitem{
+    font-family: "Jockey One", sans-serif;
+
+}
+.moviecontent{
+    font-family: "Courier ", Courier, monospace;
+    line-height: 6px;
+    font-weight: 600;
+}
+.navitem a {
+text-decoration: none;
+color: #fff;
 }
