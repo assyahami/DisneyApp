@@ -9,7 +9,6 @@ function SportsCompo(props) {
             src={`${props.strSportThumb}`}
             alt={props.idSport}
             className=" img-fluid"
-            style={{ width: '250px', height: '300px' }}
           />
         </div>
         <div className="footer d-grid">

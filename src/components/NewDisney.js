@@ -12,10 +12,9 @@ function NewDisney(props) {
             src={`${ImgKey}/${props.poster_path}`}
             alt={props.original_language}
             className=" img-fluid"
-            style={{ width: '250px', height: '300px' }}
           />
         </div>
-        <div className="footer d-grid">
+        <div className="footer card-footer d-grid">
           <span>{props.original_title || props.title}</span>
 
           <span className="ms-auto d-flex align-items-center gap-1">

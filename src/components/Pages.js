@@ -117,14 +117,12 @@ const Pagination = (props) => {
               src={`${strSportThumb}`}
               alt={props.original_language}
               className=" img-fluid"
-              style={{ width: '250px', height: '300px' }}
             />
           ) : (
             <img
               src={`${ImgKey}/${poster_path}`}
               alt={props.original_language}
               className=" img-fluid"
-              style={{ width: '250px', height: '300px' }}
             />
           )}
         </div>

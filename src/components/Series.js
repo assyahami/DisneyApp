@@ -11,7 +11,6 @@ function Series(props) {
             src={`${ImgKey}/${props.poster_path}`}
             alt={props.original_language}
             className=" img-fluid"
-            style={{ width: '250px', height: '300px' }}
           />
         </div>
         <div className="footer d-grid">

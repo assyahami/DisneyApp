@@ -209,7 +209,7 @@ button.slick-arrow.slick-next {
   font-size: 18px;
   word-wrap: normal;
   word-break: keep-all;
-  width: 210px;
+  width: 14rem;
   place-content: start;
   place-items: center;
   overflow: hidden;
@@ -349,12 +349,17 @@ button.slick-arrow.slick-next {
 }
 .MuiButtonBase-root span {
   color: #ffff !important;
+  opacity: 1 !important;
 }
 .css-1gh6k7f-MuiBottomNavigationAction-label {
   opacity: 1 !important;
 }
 .css-16lloyr-MuiBottomNavigation-root {
-  align-items: center;
+  align-items: center !important;
+}
+.trendmovies .card-body img {
+  height: 300px !important;
+  width: 350px !important;
 }
 @media screen and (max-width: 780px) {
   .navitem {
@@ -432,7 +437,11 @@ button.slick-arrow.slick-next {
   .overlaycontent {
     left: 0;
   }
+  .trendmovies .card {
+    padding: 0.5rem !important;
+  }
 }
+
 @media screen and (max-width: 480px) {
   body {
     max-width: 100%;
@@ -476,15 +485,23 @@ button.slick-arrow.slick-next {
 
 } */
   .trendmovies .card-body {
-    width: 20vh !important;
+    width: 21vh !important;
+  }
+  .trendmovies .card {
+    padding: 0rem !important;
   }
   .trendmovies .card-body img {
     border-radius: 2% !important;
+
+    height: 200px !important;
+    width: 300px !important;
   }
   .moviecontent {
     font-family: 'Courier ', Courier, monospace;
     line-height: 1.8rem;
     font-weight: 600;
+    height: 100px !important;
+    overflow-y: scroll;
     margin: 0;
   }
   .moviehead {
@@ -504,5 +521,12 @@ button.slick-arrow.slick-next {
   .sportscontant {
     height: 200px !important;
     overflow-y: scroll;
+  }
+  .trendmovies .footer {
+    font-size: 0.5rem;
+    width: 8rem !important;
+  }
+  .trendmovies .card:hover {
+    transform: scale(1);
   }
 }

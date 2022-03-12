@@ -28,7 +28,7 @@ function Detail() {
           `https://api.themoviedb.org/3/trending/movie/week?api_key=${Api_key}`
         );
         const GetIdDatas = data.results.find((x) => x.id == id);
-  
+
         return setCurrentData(GetIdDatas);
         break;
       case 'Recommeded':
@@ -36,7 +36,7 @@ function Detail() {
           `https://api.themoviedb.org/3/discover/movie/?api_key=${Api_key}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=2&with_watch_monetization_types=flatrate`
         );
         const GetIdDataInRec = Respdata.data.results.find((x) => x.id == id);
-     
+
         return setCurrentData(GetIdDataInRec);
         break;
       case 'Series':
@@ -75,18 +75,12 @@ function Detail() {
         break;
     }
 
-
     // console.log(GetIdDataInSeries)
   };
   useEffect(() => {
-    GetIdData()
+    GetIdData();
   }, [id]);
-  let displayrating = '';
-  for (let i = 0; i < 9; i++) {
-    const element = [i];
-    const starts = document.createElement('div')[element];
- 
-  }
+
   const desc = `${CurrentData.strSportDescription}`;
   return SportsCombo ? (
     <Iconmsg
@@ -122,6 +116,7 @@ function Detail() {
       style={{
         backgroundImage: `url(${ImgKey}/${CurrentData.poster_path})`,
       }}
+      id={'Detail'}
     >
       <div className="d-flex gap-3 m-md-4 align-items-center ">
         <button className="btn btn-outline-light  rounded-pill  fw-bold">
