@@ -28,7 +28,7 @@ function Detail() {
           `https://api.themoviedb.org/3/trending/movie/week?api_key=${Api_key}`
         );
         const GetIdDatas = data.results.find((x) => x.id == id);
-        console.log(GetIdDatas);
+  
         return setCurrentData(GetIdDatas);
         break;
       case 'Recommeded':
@@ -36,7 +36,7 @@ function Detail() {
           `https://api.themoviedb.org/3/discover/movie/?api_key=${Api_key}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=2&with_watch_monetization_types=flatrate`
         );
         const GetIdDataInRec = Respdata.data.results.find((x) => x.id == id);
-        console.log(GetIdDataInRec);
+     
         return setCurrentData(GetIdDataInRec);
         break;
       case 'Series':
@@ -65,7 +65,7 @@ function Detail() {
         const GetIdDataInSports = Sports.data.sports.find(
           (x) => x.idSport == id
         );
-        console.log(GetIdDataInSports);
+
         setSportsCombo(true);
         return setCurrentData(GetIdDataInSports);
         break;
@@ -74,19 +74,18 @@ function Detail() {
 
         break;
     }
-    console.log(category);
+
 
     // console.log(GetIdDataInSeries)
   };
   useEffect(() => {
-    GetIdData();
-    console.log(CurrentData);
+    GetIdData()
   }, [id]);
   let displayrating = '';
   for (let i = 0; i < 9; i++) {
     const element = [i];
     const starts = document.createElement('div')[element];
-    console.log(starts);
+ 
   }
   const desc = `${CurrentData.strSportDescription}`;
   return SportsCombo ? (
@@ -109,11 +108,11 @@ function Detail() {
           <FaPlayCircle />
         </button>
       </div>
-      <div className="text-white">
+      <div className="text-white sportscontant">
         <h2 className="display-1 m-md-2">{CurrentData.strSport}</h2>
         <h4 className="m-md-4">{CurrentData.strFormat}</h4>
         <div className="m-md-4">
-          <span>{desc.substring(0, 1300)}...More</span>
+          <span>{desc.substring(0, 1000)}...More</span>
         </div>
       </div>
     </Iconmsg>

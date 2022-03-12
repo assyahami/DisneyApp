@@ -28,7 +28,7 @@ const TimerFn=()=>{
 const IplDate=new Date("March 26,2022 00:00:00").getTime()
 const UclDate = new Date('May 26,2022 00:00:00').getTime();
 
-console.log(IplDate);
+
   interval=setInterval(()=>{
 const now=new Date().getTime()
 const distance=IplDate-now
@@ -70,22 +70,22 @@ return () => TimerFn();
       <div className=" carousel">
         <Slider {...settings} className="slider">
           <div className="slider-inner ">
-            <a>
+            <a href="">
               <img src="./images/slider-scale.jpg" alt="" className="" />
             </a>
           </div>
           <div className="slider-inner ">
-            <a>
+            <a href="">
               <img src="./images/slider-badag.jpg" alt="" className="" />
             </a>
           </div>
           <div className="slider-inner ">
-            <a>
+            <a href="">
               <img src="./images/spider.jpeg" alt="" className="" />
             </a>
           </div>
           <div className="slider-inner ">
-            <a>
+            <a href="">
               <img src="./images/disney-plus.jpg" alt="" className="" />
             </a>
           </div>
@@ -159,7 +159,6 @@ return () => TimerFn();
               </button>
             </div>
           </div>
-        
         </Slider>
       </div>
     );

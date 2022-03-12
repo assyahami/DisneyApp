@@ -55,7 +55,7 @@ function Pages() {
  }
   useEffect(() => {
  FetchDatas()
-  },[]);
+  },[category]);
   console.log(Page);
   return (
     <aritcle className="pages mt-5">
@@ -66,7 +66,7 @@ function Pages() {
         <div className="">
           <h2>{Loading||PageHeading}</h2>
         </div>
-        <div className="d-flex flex-wrap justify-content-between align-items-center pages">
+        <div className="d-flex flex-wrap justify-content-between align-items-center pagescontant">
           {Page.map((item) => {
             if (Loading) {
               return (

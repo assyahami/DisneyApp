@@ -252,7 +252,7 @@ function Home() {
                   <Link to={`/Detail/Sports/${Data.idSport}`}>
                     <Sportscompo
                       {...Data}
-                      key={Data.idSport}
+                      key={index}
                       loading={loading}
                     />
                     ;
@@ -268,6 +268,7 @@ function Home() {
           <button className="btn btn-outline-light fw-bolder rounded-pill">
             Load More....
           </button>
+
         </div>
       </section>
       <footer>

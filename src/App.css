@@ -16,10 +16,10 @@ body {
   margin: 0;
 }
 .navbar {
-  position:fixed;
+  position: fixed;
   top: 0%;
   width: 100%;
-  overflow:hidden;
+  overflow: hidden;
   z-index: 9999999;
   height: 120px;
   background-image: linear-gradient(
@@ -31,8 +31,8 @@ body {
     #3d2d6e
   );
 }
-.bottomnav{
-    background-image: linear-gradient(
+.bottomnav {
+  background-image: linear-gradient(
     to bottom,
     #011738,
     #0f1d3d,
@@ -40,7 +40,7 @@ body {
     #2c2961,
     #3d2d6e
   );
-  z-index:9999;
+  z-index: 9999;
 }
 #logo {
   margin: 0;
@@ -204,7 +204,7 @@ button.slick-arrow.slick-next {
   top: 50%;
   left: 10%;
   bottom: 5%;
-  
+
   border-radius: 0 0 20% 20%;
   font-size: 18px;
   word-wrap: normal;
@@ -242,7 +242,7 @@ button.slick-arrow.slick-next {
 
   /* margin-bottom: 2.5rem; */
 }
-.medias{
+.medias {
   display: flex;
   justify-content: space-between;
 }
@@ -337,21 +337,21 @@ button.slick-arrow.slick-next {
 @media screen and (min-width: 780px) {
   .toggle {
     display: none;
-  }  .navitem {
+  }
+  .navitem {
     display: flex;
   }
 }
 @media screen and (min-width: 480px) {
-  .bottomnavbar{
-    display:none;
+  .bottomnavbar {
+    display: none;
   }
 }
-.MuiButtonBase-root span{
+.MuiButtonBase-root span {
   color: #ffff !important;
 }
 .css-1gh6k7f-MuiBottomNavigationAction-label {
-opacity: 1 !important;
-
+  opacity: 1 !important;
 }
 .css-16lloyr-MuiBottomNavigation-root {
   align-items: center;
@@ -434,7 +434,7 @@ opacity: 1 !important;
   }
 }
 @media screen and (max-width: 480px) {
-  body{
+  body {
     max-width: 100%;
   }
   .overlaycontenttwo,
@@ -445,28 +445,64 @@ opacity: 1 !important;
     padding: 0.5rem;
     font-size: 1rem;
   }
-   .toggle {
+  .toggle {
     display: none;
   }
-  .Authication,.Detail{
+  .Authication,
+  .Detail {
     height: 95vh;
   }
-  .Authication span{
-    width:100% !important;
+  .Authication span {
+    width: 100% !important;
   }
-  .pages{
+  .pages {
     display: grid;
     place-content: center;
     place-items: center;
   }
   .navbar {
-  position:fixed;
-  top: 0%;
-  bottom: 0%;
-  width:100%;
-}
-/* .bottomnavbar{
+    position: fixed;
+    top: 0%;
+    height: 80px !important;
+    width: 100%;
+  }
+  #logo {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+  }
+  /* .bottomnavbar{
   width: 90% !important;
 
 } */
+  .trendmovies .card-body {
+    width: 20vh !important;
+  }
+  .trendmovies .card-body img {
+    border-radius: 2% !important;
+  }
+  .moviecontent {
+    font-family: 'Courier ', Courier, monospace;
+    line-height: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  .moviehead {
+    font-size: x-large;
+  }
+  .Detail {
+    padding-bottom: 0rem !important;
+    margin: 0rem !important;
+    overflow: scroll !important;
+  }
+  .pages {
+    margin-top: 0rem !important;
+  }
+  .pagescontant {
+    justify-content: center !important;
+  }
+  .sportscontant {
+    height: 200px !important;
+    overflow-y: scroll;
+  }
 }

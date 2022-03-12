@@ -18,7 +18,6 @@ import 'stream-chat-react/dist/css/index.css';
 
 const cookies= new Cookies()
 const token=cookies.get("token")
-console.log(token);
 function Header() {
   const [NavToggle, setNavToggle] = useState(false);
   const [Login, setLogin] = useState(false);
@@ -84,7 +83,7 @@ window.location.reload()
                     <FaTimes
                       onClick={() => {
                         setSearchToggle(!SearchToggle);
-                        console.log('click');
+
                       }}
                       style={{ color: '#fff !important', opacity: '1' }}
                     />
@@ -98,7 +97,7 @@ window.location.reload()
                   <FaSearch
                     onClick={() => {
                       setSearchToggle(!SearchToggle);
-                      console.log('click');
+
                     }}
                   />
                 </button>
@@ -147,7 +146,6 @@ window.location.reload()
                 className="btn"
                 onClick={() => {
                   setNavToggle(!NavToggle);
-                  NavToggle ? console.log('click') : console.log('click me');
                 }}
               >
                 {NavToggle ? (
