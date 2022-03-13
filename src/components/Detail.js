@@ -133,7 +133,7 @@ function Detail() {
             CurrentData.name ||
             CurrentData.original_name}
         </h2>
-        <div className="d-flex  align-items-center  gap-2">
+        <div className="d-flex  align-items-center  gap-2 footer">
           <h5 className="mt-3  text-dark fw-bold bg-warning rounded-circle p-3">
             {CurrentData.vote_average}
           </h5>

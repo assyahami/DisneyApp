@@ -202,14 +202,14 @@ button.slick-arrow.slick-next {
   background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 12%;
   bottom: 5%;
 
   border-radius: 0 0 20% 20%;
   font-size: 18px;
   word-wrap: normal;
   word-break: keep-all;
-  width: 14rem;
+  width: 23vh;
   place-content: start;
   place-items: center;
   overflow: hidden;
@@ -430,8 +430,9 @@ button.slick-arrow.slick-next {
     justify-content: space-evenly;
   }
   .trendmovies .footer {
-    width: fit-content;
     font-size: 0.8rem;
+    width: 20vh !important;
+    left:13%;
   }
   .overlaycontenttwo,
   .overlaycontent {
@@ -440,6 +441,7 @@ button.slick-arrow.slick-next {
   .trendmovies .card {
     padding: 0.5rem !important;
   }
+  
 }
 
 @media screen and (max-width: 480px) {
@@ -471,7 +473,8 @@ button.slick-arrow.slick-next {
   }
   .navbar {
     position: fixed;
-    top: 0%;
+    top: 0;
+    bottom: 0;
     height: 80px !important;
     width: 100%;
   }
@@ -480,10 +483,6 @@ button.slick-arrow.slick-next {
     width: 100px;
     height: 100px;
   }
-  /* .bottomnavbar{
-  width: 90% !important;
-
-} */
   .trendmovies .card-body {
     width: 21vh !important;
   }
@@ -495,6 +494,12 @@ button.slick-arrow.slick-next {
 
     height: 200px !important;
     width: 300px !important;
+  }
+  #pagesimgs {
+    border-radius: 2% !important;
+
+    height: 30vh !important;
+    width: 30vh !important ;
   }
   .moviecontent {
     font-family: 'Courier ', Courier, monospace;
@@ -515,6 +520,9 @@ button.slick-arrow.slick-next {
   .pages {
     margin-top: 0rem !important;
   }
+  .pageheaddiv {
+    margin: 0.5rem !important;
+  }
   .pagescontant {
     justify-content: center !important;
   }
@@ -524,9 +532,31 @@ button.slick-arrow.slick-next {
   }
   .trendmovies .footer {
     font-size: 0.5rem;
-    width: 8rem !important;
+    transform: translateY(150%);
+    width: 15vh !important;
+    text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  }
+  #footer{
+    position: absolute;
+    left: 0;
+    top: 27%;
+    border-radius: 0 !important;
+    font-size: 0.5rem;
+    width: 26vh !important;
+    text-align: center;
   }
   .trendmovies .card:hover {
     transform: scale(1);
+  }
+  .pagescontant{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px;
+    marign-top:0.5rem;
+  }
+  .pagehead{
+    text-align: center;
   }
 }

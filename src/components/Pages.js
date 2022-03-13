@@ -62,11 +62,11 @@ function Pages() {
       <div className="text-white mt-5 "></div>
       <br />
       <br />
-      <section className="text-white mt-5 ms-3">
-        <div className="">
+      <section className="text-white mt-5 ms-3 pageheaddiv">
+        <div className="pagehead">
           <h2>{Loading||PageHeading}</h2>
         </div>
-        <div className="d-flex flex-wrap justify-content-between align-items-center pagescontant">
+        <div className="d-flex flex-wrap justify-content-around align-items-center pagescontant">
           {Page.map((item) => {
             if (Loading) {
               return (
@@ -109,24 +109,26 @@ const Pagination = (props) => {
   let { strFormat, strSportThumb, strSport, SportsMode, strSportIconGreen } =
     props;
   return (
-    <div className="text-white   trendmovies">
+    <div className="text-white   trendmovies" id="pages">
       <Cards className="card mt-2 w-auto bg-transparent border-0 p-2">
-        <div className=" card-body ">
+        <div className="  ">
           {SportsMode ? (
             <img
               src={`${strSportThumb}`}
               alt={props.original_language}
               className=" img-fluid"
+              id="pagesimgs"
             />
           ) : (
             <img
               src={`${ImgKey}/${poster_path}`}
               alt={props.original_language}
               className=" img-fluid"
+              id="pagesimgs"
             />
           )}
         </div>
-        <div className="footer d-grid">
+        <div className="footer d-grid" id="footer">
           <h4>{original_name || props.title || strSport}</h4>
 
           {SportsMode ? (

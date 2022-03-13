@@ -36,7 +36,7 @@
 }
 .Authication span {
   line-height: 1.5;
-    font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 
   font-size: 15px;
   font-weight: 600;
@@ -68,21 +68,20 @@
   font-family: 'Rock Salt', cursive;
 }
 .css-1gh6k7f-MuiBottomNavigationAction-label {
-    font-family: "Oxygen Mono", monospace;
+  font-family: 'Oxygen Mono', monospace;
 }
-.footer span{
-    font-family: "Courier New", Courier, monospace;
+.footer span {
+  font-family: 'Courier New', Courier, monospace;
 }
-.navitem{
-    font-family: "Jockey One", sans-serif;
-
+.navitem {
+  font-family: 'Jockey One', sans-serif;
 }
-.moviecontent{
-    font-family: "Courier ", Courier, monospace;
-    line-height: 6px;
-    font-weight: 600;
+.moviecontent {
+  font-family: 'Courier ', Courier, monospace;
+  line-height: 6px;
+  font-weight: 600;
 }
 .navitem a {
-text-decoration: none;
-color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
