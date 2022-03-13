@@ -554,7 +554,7 @@ button.slick-arrow.slick-next {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
     gap: 10px;
-    marign-top:0.5rem;
+    margin-top: 1rem !important;
   }
   .pagehead{
     text-align: center;
